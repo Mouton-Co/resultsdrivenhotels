@@ -16,7 +16,8 @@
         @vite(["resources/scss/app.scss", "resources/js/app.js"])
     </head>
 
-    <body>
+    <body class="font-nonito mt-[104px]">
+        <x-navigation.navbar />
         {{ $slot }}
     </body>
 
