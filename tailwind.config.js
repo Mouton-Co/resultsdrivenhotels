@@ -1,21 +1,33 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
-import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-        './storage/framework/views/*.php',
-        './resources/views/**/*.blade.php',
+        "./resources/**/*.blade.php",
+        "./resources/**/**/*.blade.php",
+        "./resources/**/**/**/*.blade.php",
+        "./resources/**/*.js",
     ],
 
     theme: {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                nunito: ['Nunito', ...defaultTheme.fontFamily.sans],
+                merriweather: ['Merriweather', ...defaultTheme.fontFamily.serif],
+                akshar: ['Akshar', ...defaultTheme.fontFamily.serif],
+                abel: ['Abel', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                gold: '#c59d5f',
+                ...defaultTheme.colors,
+            }
+        },
+        screens: {
+            'smaller-than-730': { 'min': '0px', 'max': '730px' },
+            'smaller-than-1060': { 'min': '0px', 'max': '1060px' },
+            'smaller-than-1450': { 'min': '0px', 'max': '1450px' },
+            ...defaultTheme.screens,
         },
     },
-
-    plugins: [forms],
 };
