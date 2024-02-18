@@ -1,9 +1,10 @@
 {{-- info bar --}}
-<nav class="fixed top-0 flex h-[34px] w-full items-center justify-between bg-[#1e1e1e] pl-[5.5%] pr-[10%] smaller-than-730:justify-end"
-    aria-label="information-bar">
+<nav class="fixed top-0 z-10 flex h-[34px] w-full items-center justify-between bg-[#1e1e1e] pl-[5.5%] pr-[10%]
+smaller-than-730:justify-end" aria-label="information-bar">
     {{-- contact information --}}
     <div class="flex w-fit items-center gap-3 smaller-than-730:hidden">
-        <a class="flex h-full items-center gap-2 text-[12px] text-[#555555] transition-all duration-300 hover:text-[#f5f5f5]"
+        <a class="flex h-full items-center gap-2 text-[12px] text-[#555555] transition-all duration-300
+        hover:text-[#f5f5f5]"
             href="mailto:info@resultsdrivenhotels.com" target="_blank">
             <x-icon.email class="h-4 w-4" />
             <span>
@@ -11,7 +12,8 @@
             </span>
         </a>
         <span class="text-[#555555]">{{ __('|') }}</span>
-        <a class="flex h-full items-center gap-2 text-[12px] text-[#555555] transition-all duration-300 hover:text-[#f5f5f5]"
+        <a class="flex h-full items-center gap-2 text-[12px] text-[#555555] transition-all duration-300
+        hover:text-[#f5f5f5]"
             href="https://maps.app.goo.gl/cvoYnXovfk6WPP9y7" target="_blank">
             <x-icon.pin class="h-4 w-4" />
             <span>
@@ -35,7 +37,7 @@
 </nav>
 
 {{-- navbar --}}
-<nav class="fixed top-[34px] flex h-[70px] z-10 w-full items-center justify-between bg-[#333132] pl-[5%] pr-[10%]"
+<nav class="fixed top-[34px] z-10 flex h-[70px] w-full items-center justify-between bg-[#333132] pl-[5%] pr-[10%]"
     aria-label="navigation-bar">
 
     {{-- logo left --}}
@@ -64,7 +66,7 @@
                 </x-navigation.dropdown-link>
                 <x-navigation.dropdown-link class="pb-5" href="https://www.themanhattanoncoral.co.za/"
                     target="_blank">
-                    {{ __('Manhattanon Coral') }}
+                    {{ __('The Manhattan on Coral') }}
                 </x-navigation.dropdown-link>
             </x-navigation.dropdown>
         </x-navigation.label>
@@ -123,8 +125,8 @@
 </nav>
 
 {{-- mobile menu --}}
-<nav class="fixed right-0 top-0 z-50 flex h-full basis-0 flex-col overflow-scroll bg-black py-[55px] transition-all duration-500"
-    id="mobile-menu" aria-label="mobile-menu" style="width: 0px;">
+<nav class="fixed right-0 top-0 z-50 flex h-full basis-0 flex-col overflow-scroll bg-black py-[55px] transition-all
+duration-500" id="mobile-menu" aria-label="mobile-menu" style="width: 0px;">
     {{-- close button --}}
     <div class="mb-[44px] flex w-full justify-start pl-[46px]">
         <x-icon.close class="h-7 w-7 cursor-pointer text-[#f5f5f5] hover:text-gold" id="mobile-menu-close" />
@@ -143,7 +145,7 @@
             {{ __('38 on Westcliff') }}
         </x-navigation.mobile-link>
         <x-navigation.mobile-link class="mt-[34px]" href="https://www.themanhattanoncoral.co.za/" target="_blank">
-            {{ __('Manhattanon Coral') }}
+            {{ __('The Manhattan on Coral') }}
         </x-navigation.mobile-link>
     </div>
     <x-navigation.mobile-label class="mt-[36px]" id="brewery-link-mobile">

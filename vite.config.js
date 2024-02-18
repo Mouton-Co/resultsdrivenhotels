@@ -8,6 +8,7 @@ export default defineConfig({
                 'resources/scss/app.scss',
                 'resources/js/app.js',
                 'resources/js/homepage-header.js',
+                'resources/js/dropdowns.js',
             ],
             refresh: true,
         }),
