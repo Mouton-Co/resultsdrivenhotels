@@ -14,6 +14,7 @@
 
         <!-- Scripts -->
         @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+        @yield('head')
     </head>
 
     <body class="font-nonito mt-[104px]">

@@ -17,9 +17,12 @@ export default {
                 merriweather: ['Merriweather', ...defaultTheme.fontFamily.serif],
                 akshar: ['Akshar', ...defaultTheme.fontFamily.serif],
                 abel: ['Abel', ...defaultTheme.fontFamily.sans],
+                viaoda: ['Viaoda Libre', ...defaultTheme.fontFamily.sans],
+                baskerville: ['Baskerville', ...defaultTheme.fontFamily.serif],
             },
             colors: {
                 gold: '#c59d5f',
+                white: '#d9d9d9',
                 ...defaultTheme.colors,
             }
         },
