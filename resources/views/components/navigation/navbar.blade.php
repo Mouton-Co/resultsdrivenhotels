@@ -35,7 +35,7 @@
 </nav>
 
 {{-- navbar --}}
-<nav class="fixed top-[34px] flex h-[70px] w-full items-center justify-between bg-[#333132] pl-[5%] pr-[10%]"
+<nav class="fixed top-[34px] flex h-[70px] z-10 w-full items-center justify-between bg-[#333132] pl-[5%] pr-[10%]"
     aria-label="navigation-bar">
 
     {{-- logo left --}}
