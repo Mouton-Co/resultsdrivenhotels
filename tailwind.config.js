@@ -29,6 +29,7 @@ export default {
         screens: {
             'smaller-than-730': { 'min': '0px', 'max': '730px' },
             'smaller-than-1060': { 'min': '0px', 'max': '1060px' },
+            'smaller-than-1200': { 'min': '0px', 'max': '1200px' },
             'smaller-than-1450': { 'min': '0px', 'max': '1450px' },
             ...defaultTheme.screens,
         },
