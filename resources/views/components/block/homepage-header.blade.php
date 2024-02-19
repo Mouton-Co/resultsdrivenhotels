@@ -110,7 +110,7 @@
         {{-- Book now button --}}
         <a class="flex h-[56.5px] w-full items-center justify-center bg-gold font-merriweather text-sm
         text-[#ffffff] transition-all duration-300 hover:bg-white hover:text-black sm:w-[200px]"
-        id="book-now-button" href="https://hotelkrige.co.za/" target="_blank">
+        id="book-now-button" href="https://book.nightsbridge.com/31851" target="_blank">
             {{ __('BOOK NOW') }}
         </a>
     </div>

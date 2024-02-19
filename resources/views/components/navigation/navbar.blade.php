@@ -42,7 +42,7 @@ smaller-than-730:justify-end" aria-label="information-bar">
 
     {{-- logo left --}}
     <a class="flex h-full w-fit items-center justify-between" href="{{ route('homepage') }}">
-        <img class="h-[55px]" src="{{ asset('images/logo-icon-green.png') }}" alt="No image found">
+        <img class="h-[55px]" src="{{ asset('images/logos/logo-icon-green.png') }}" alt="No image found">
         <span class="flex h-full items-center smaller-than-1450:hidden">
             <span class="ml-2 font-akshar text-[21px] -tracking-[0.51px] text-white">
                 {{ __('RESULTS DRIVEN') }}

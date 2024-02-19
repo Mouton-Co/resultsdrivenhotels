@@ -16,21 +16,21 @@ export function dropdowns() {
     $('#book-now-dropdown-options').on('click', function (e) {
 
         let options = [
-            { name: 'Hotel Krige', url: 'https://hotelkrige.co.za/' },
-            { name: '38 on Westcliff', url: 'https://www.38onwestcliff.co.za/' },
-            { name: 'The Manhattan on Coral', url: 'https://www.themanhattanoncoral.co.za/' },
-            { name: 'The Franchoek Beer Company', url: 'https://franschhoekbeerco.co.za/' },
-            { name: 'Franks Corner', url: 'https://franks-corner.com/' }
+            { name: 'Hotel Krige', url: 'https://book.nightsbridge.com/31851' },
+            { name: '38 on Westcliff', url: 'https://book.nightsbridge.com/31529' },
+            { name: 'The Manhattan on Coral', url: 'https://book.nightsbridge.com/33937' },
+            { name: 'The Franchoek Beer Company', url: 'https://franschhoekbeerco.co.za/store/' },
+            { name: 'Franks Corner', url: 'https://www.dineplan.com/restaurants/franks-corner-bar-and-grill' }
         ];
 
         $(this).removeClass('border-gold').addClass('border-[#555555]');
         $('#book-now-dropdown-options').attr('aria-hidden', 'true');
         $('#book-now-dropdown-options').removeClass('flex').addClass('hidden');
 
-        for (let i = 0; i < options.length; i++) {
-            if (e.target.innerHTML.trim() == options[i].name) {
-                $('#book-now-dropdown-selected').text(options[i].name);
-                $('#book-now-button').attr('href', options[i].url);
+        for (const option of options) {
+            if (e.target.innerHTML.trim() == option.name) {
+                $('#book-now-dropdown-selected').text(option.name);
+                $('#book-now-button').attr('href', option.url);
                 break;
             }
         }
