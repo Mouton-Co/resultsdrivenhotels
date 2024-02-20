@@ -22,14 +22,18 @@ export default {
             },
             colors: {
                 gold: '#c59d5f',
-                white: '#d9d9d9',
+                offwhite: '#d9d9d9',
+                offblack: '#1a1a1a',
+                offgray: '#999999',
                 ...defaultTheme.colors,
             }
         },
         screens: {
             'smaller-than-730': { 'min': '0px', 'max': '730px' },
             'smaller-than-1060': { 'min': '0px', 'max': '1060px' },
+            'smaller-than-1120': { 'min': '0px', 'max': '1120px' },
             'smaller-than-1200': { 'min': '0px', 'max': '1200px' },
+            'smaller-than-1440': { 'min': '0px', 'max': '1440px' },
             'smaller-than-1450': { 'min': '0px', 'max': '1450px' },
             ...defaultTheme.screens,
         },

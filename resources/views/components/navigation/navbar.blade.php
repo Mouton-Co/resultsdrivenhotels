@@ -1,5 +1,5 @@
 {{-- info bar --}}
-<nav class="fixed top-0 z-10 flex h-[34px] w-full items-center justify-between bg-[#1e1e1e] pl-[5.5%] pr-[10%]
+<nav class="fixed top-0 z-10 flex h-[34px] w-full items-center justify-between bg-offblack pl-[5.5%] pr-[10%]
 smaller-than-730:justify-end" aria-label="information-bar">
     {{-- contact information --}}
     <div class="flex w-fit items-center gap-3 smaller-than-730:hidden">
@@ -44,10 +44,10 @@ smaller-than-730:justify-end" aria-label="information-bar">
     <a class="flex h-full w-fit items-center justify-between" href="{{ route('homepage') }}">
         <img class="h-[55px]" src="{{ asset('images/logos/logo-icon-green.png') }}" alt="No image found">
         <span class="flex h-full items-center smaller-than-1450:hidden">
-            <span class="ml-2 font-akshar text-[21px] -tracking-[0.51px] text-white">
+            <span class="ml-2 font-akshar text-[21px] -tracking-[0.51px] text-offwhite">
                 {{ __('RESULTS DRIVEN') }}
             </span>
-            <span class="ml-1 -translate-y-[1px] font-abel text-[18px] -tracking-[0.32px] text-white">
+            <span class="ml-1 -translate-y-[1px] font-abel text-[18px] -tracking-[0.32px] text-offwhite">
                 {{ __('HOSPITALITY SERVICES') }}
             </span>
         </span>

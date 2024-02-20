@@ -8,11 +8,11 @@
                     style="background-image:
                     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                     url('{{ asset('images/homepage-header-carousel/pexels-quark-studio.jpg') }}');">
-                    <h1 class="font-viaoda text-5xl text-white md:text-7xl">
+                    <h1 class="font-viaoda text-5xl text-offwhite md:text-7xl">
                         {{ __('Luxury Meets Comfort') }}
                     </h1>
                     <div class="h-[1px] w-[40%] rounded-full bg-gold md:w-[26%]"></div>
-                    <p class="font-baskerville text-xl text-white md:text-3xl">
+                    <p class="font-baskerville text-xl text-offwhite md:text-3xl">
                         {{ __('Finding the perfect place for you') }}
                         <br>
                         {{ __('to rest your head is only one click away') }}
@@ -24,11 +24,11 @@
                     style="background-image:
                     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                     url('{{ asset('images/homepage-header-carousel/pexels-athena.jpg') }}');">
-                    <h1 class="font-viaoda text-5xl text-white md:text-7xl">
+                    <h1 class="font-viaoda text-5xl text-offwhite md:text-7xl">
                         {{ __('Unwind and Relax') }}
                     </h1>
                     <div class="h-[1px] w-[40%] rounded-full bg-gold md:w-[26%]"></div>
-                    <p class="font-baskerville text-xl text-white md:text-3xl">
+                    <p class="font-baskerville text-xl text-offwhite md:text-3xl">
                         {{ __('Escape the rush of every day life') }}
                         <br>
                         {{ __('and enjoy the sun setting over the ocean') }}
@@ -40,11 +40,11 @@
                     style="background-image:
                     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                     url('{{ asset('images/homepage-header-carousel/pexels-donald-tong.jpg') }}');">
-                    <h1 class="font-viaoda text-5xl text-white md:text-7xl">
+                    <h1 class="font-viaoda text-5xl text-offwhite md:text-7xl">
                         {{ __('Experience Life in Style') }}
                     </h1>
                     <div class="h-[1px] w-[40%] rounded-full bg-gold md:w-[26%]"></div>
-                    <p class="font-baskerville text-xl text-white md:text-3xl">
+                    <p class="font-baskerville text-xl text-offwhite md:text-3xl">
                         {{ __('Indulge in our diverse selection of venues,') }}
                         <br>
                         {{ __('blending modern and traditional.') }}
@@ -56,11 +56,11 @@
                     style="background-image:
                     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                     url('{{ asset('images/homepage-header-carousel/pexels-pixabay.jpg') }}');">
-                    <h1 class="font-viaoda text-5xl text-white md:text-7xl">
+                    <h1 class="font-viaoda text-5xl text-offwhite md:text-7xl">
                         {{ __('Create Memories') }}
                     </h1>
                     <div class="h-[1px] w-[40%] rounded-full bg-gold md:w-[26%]"></div>
-                    <p class="font-baskerville text-xl text-white md:text-3xl">
+                    <p class="font-baskerville text-xl text-offwhite md:text-3xl">
                         {{ __('Toast to unforgettable moments') }}
                         <br>
                         {{ __('at our selection of restaurants and breweries') }}
@@ -70,24 +70,24 @@
         </div>
 
         {{-- arrows --}}
-        <div class="swiper-button-next !hidden sm:!block !text-white"></div>
-        <div class="swiper-button-prev !hidden sm:!block !text-white"></div>
+        <div class="swiper-button-next !hidden sm:!block !text-offwhite"></div>
+        <div class="swiper-button-prev !hidden sm:!block !text-offwhite"></div>
 
         {{-- bullets --}}
-        <div class="swiper-pagination bullets-white"></div>
+        <div class="swiper-pagination bullets-offwhite"></div>
     </div>
 
     {{-- Book now bar --}}
-    <div class="flex h-48 w-full shrink-0 flex-col flex-wrap items-center justify-center gap-6 bg-[#1e1e1e] px-12
+    <div class="flex h-48 w-full shrink-0 flex-col flex-wrap items-center justify-center gap-6 bg-offblack px-12
     sm:h-36 sm:flex-row sm:px-0">
         {{-- Dropdown --}}
         <div class="book-now-dropdown relative flex w-full cursor-pointer items-center justify-between gap-6 border
-        border-[#555555] px-5 py-4 text-[#999999] transition-all duration-300 sm:w-[320px]" id="book-now-dropdown">
+        border-[#555555] px-5 py-4 text-offgray transition-all duration-300 sm:w-[320px]" id="book-now-dropdown">
             <span class="book-now-dropdown" id="book-now-dropdown-selected">{{ __('Hotel Krige') }}</span>
             <x-icon.arrow class="book-now-dropdown h-5 w-5" />
             {{-- Dropdown options --}}
             <div class="book-now-dropdown absolute left-0 z-10 hidden h-[217px] w-full flex-col items-start
-            justify-center gap-4 border border-[#555555] bg-[#1e1e1e] px-4" id="book-now-dropdown-options"
+            justify-center gap-4 border border-[#555555] bg-offblack px-4" id="book-now-dropdown-options"
             aria-hidden="true" style="top: -217.5px;">
                 <span class="book-now-dropdown-option mt-4 hover:text-gold">
                     {{ __('Hotel Krige') }}
@@ -109,7 +109,7 @@
 
         {{-- Book now button --}}
         <a class="flex h-[56.5px] w-full items-center justify-center bg-gold font-merriweather text-sm
-        text-[#ffffff] transition-all duration-300 hover:bg-white hover:text-black sm:w-[200px]"
+        text-white transition-all duration-300 hover:bg-offwhite hover:text-black sm:w-[200px]"
         id="book-now-button" href="https://book.nightsbridge.com/31851" target="_blank">
             {{ __('BOOK NOW') }}
         </a>
