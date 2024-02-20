@@ -1,5 +1,5 @@
 @section('head')
-    @vite(['resources/js/homepage-header.js', 'resources/js/dropdowns.js'])
+    @vite(['resources/js/homepage-header.js', 'resources/js/dropdowns.js', 'resources/js/cards-carousel.js'])
 @endsection
 
 <x-app-layout>
@@ -8,6 +8,7 @@
 
     {{-- blocks --}}
     <div class="flex flex-col items-center justify-center">
+
         <x-block.info
             :title="'LUXURY MEETS EXCEPTIONAL'"
             :description="'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aspernatur ex natus
@@ -18,5 +19,8 @@
             :link="'about-us'"
             :linkLabel="'Read more...'"
         />
+
+        <x-block.accommodation-carousel />
+
     </div>
 </x-app-layout>

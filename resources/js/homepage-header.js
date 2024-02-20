@@ -1,3 +1,5 @@
+// full documentation https://swiperjs.com/get-started
+
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -10,6 +12,7 @@ export function homepageHeader() {
         pagination: {
             el: ".swiper-pagination",
             dynamicBullets: true,
+            clickable: true,
         },
         loop: true,
     });

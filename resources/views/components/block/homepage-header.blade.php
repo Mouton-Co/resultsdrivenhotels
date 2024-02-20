@@ -70,11 +70,11 @@
         </div>
 
         {{-- arrows --}}
-        <div class="swiper-button-next !hidden sm:!block"></div>
-        <div class="swiper-button-prev !hidden sm:!block"></div>
+        <div class="swiper-button-next !hidden sm:!block !text-white"></div>
+        <div class="swiper-button-prev !hidden sm:!block !text-white"></div>
 
         {{-- bullets --}}
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination bullets-white"></div>
     </div>
 
     {{-- Book now bar --}}
