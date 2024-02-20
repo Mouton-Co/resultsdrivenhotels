@@ -9,11 +9,11 @@
             </h1>
             <div class="bg-gold h-[1px] w-5/6 sm:w-1/6"></div>
         </div>
-        <p class="text-md text-center text-[#1e1e1e] sm:text-left sm:text-lg">
+        <p class="text-md text-center text-[#999999] sm:text-left sm:text-lg">
             {{ $description ?? '' }}
         </p>
-        <a class="text-md text-gold text-center hover:underline sm:self-start sm:text-left sm:text-lg"
-        href="{{ Route::has($link) ? route($link) : '#' }}">
+        <a class="font-merriweather italic text-md text-gold text-center hover:underline sm:self-start sm:text-left
+        sm:text-lg" href="{{ Route::has($link) ? route($link) : '#' }}">
             {{ $linkLabel ?? '' }}
         </a>
     </div>
