@@ -33,7 +33,7 @@
                 {{ __('RESTAURANTS AND BREWERY') }}
                 <span class="bg-gold -translate-1/2 absolute right-0 top-1/2 h-[1px] w-24"></span>
             </h1>
-            <p class="text-offgray mt-6 w-full font-extralight leading-6 sm:pr-24 md:pr-48">
+            <p class="text-offgray mt-6 w-full font-extralight leading-6 sm:pr-24 md:pr-48 md:text-lg">
                 {{
                     __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sed reprehenderit, consectetur
                     facilis alias, perspiciatis ipsam libero minus veritatis corporis quam ab error non illum vero
@@ -77,7 +77,7 @@
                 {{ __('EXPERIENCES AND OCCASIONS') }}
                 <span class="bg-gold -translate-1/2 absolute right-0 top-1/2 h-[1px] w-24"></span>
             </h1>
-            <p class="text-offgray mt-6 w-full font-extralight leading-6 sm:pr-24 md:pr-48">
+            <p class="text-offgray mt-6 w-full font-extralight leading-6 sm:pr-24 md:pr-48 md:text-lg">
                 {{
                     __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sed reprehenderit, consectetur
                     facilis alias, perspiciatis ipsam libero minus veritatis corporis quam ab error non illum vero
