@@ -1,4 +1,4 @@
-<div class="flex h-full w-full max-w-[346px] flex-col items-center justify-center bg-[#ffffff] shadow">
+<div class="flex h-full w-full max-w-[346px] flex-col items-center justify-center bg-white shadow">
 
     {{-- image --}}
     <a class="h-[45%] w-full bg-cover bg-center bg-no-repeat transition-all duration-300 hover:brightness-50"
@@ -13,15 +13,15 @@
             </span>
         @endif
         @if (!empty($title))
-            <a class="hover:text-gold text-base font-bold text-[#1e1e1e] transition-all duration-300"
-                href="{{ $href ?? '#' }}">
+            <a class="hover:text-gold font-nunito text-base font-medium tracking-[1.6px] text-offblack
+            transition-all duration-300" href="{{ $href ?? '#' }}">
                 {{ $title }}
             </a>
         @endif
 
-        <div class="h-[1px] w-[60px] bg-[#1e1e1e]"></div>
+        <div class="h-[1px] w-[60px] bg-offblack"></div>
         @if (!empty($description))
-            <p class="line-clamp-4 text-sm leading-7 text-[#999999]">
+            <p class="font-nunito line-clamp-4 text-sm font-extralight leading-6 text-offgray">
                 {{ $description }}
             </p>
         @endif

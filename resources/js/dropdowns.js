@@ -36,10 +36,46 @@ export function dropdowns() {
         }
     });
 
+    $('#brewery-book-now-dropdown').on('click', function (e) {
+        if ($('#brewery-book-now-dropdown-options').attr('aria-hidden') === 'true') {
+            let top = openTop('brewery-book-now-dropdown') ? '-97.5px' : '56.5px';
+            $(this).removeClass('border-[#555555]').addClass('border-gold');
+            $('#brewery-book-now-dropdown-options').css('top', top);
+            $('#brewery-book-now-dropdown-options').attr('aria-hidden', 'false');
+            $('#brewery-book-now-dropdown-options').removeClass('hidden').addClass('flex');
+        } else {
+            $(this).removeClass('border-gold').addClass('border-[#555555]');
+            $('#brewery-book-now-dropdown-options').attr('aria-hidden', 'true');
+            $('#brewery-book-now-dropdown-options').removeClass('flex').addClass('hidden');
+        }
+    });
+
+    $('#brewery-book-now-dropdown-options').on('click', function (e) {
+        let options = [
+            { name: 'The Franchoek Beer Company', url: 'https://franschhoekbeerco.co.za/store/' },
+            { name: 'Franks Corner', url: 'https://www.dineplan.com/restaurants/franks-corner-bar-and-grill' }
+        ];
+
+        $(this).removeClass('border-gold').addClass('border-[#555555]');
+        $('#brewery-book-now-dropdown-options').attr('aria-hidden', 'true');
+        $('#brewery-book-now-dropdown-options').removeClass('flex').addClass('hidden');
+
+        for (const option of options) {
+            if (e.target.innerHTML.trim() == option.name) {
+                $('#brewery-book-now-dropdown-selected').text(option.name);
+                $('#brewery-book-now-button').attr('href', option.url);
+                break;
+            }
+        }
+    });
+
     $('html').on('click', function (e) {
 
         /* exept elements with class someClass */
-        if ($(e.target).hasClass('book-now-dropdown')) {
+        if (
+            $(e.target).hasClass('book-now-dropdown') ||
+            $(e.target).hasClass('brewery-book-now-dropdown')
+        ) {
             return;
         }
 
@@ -53,6 +89,11 @@ export function dropdowns() {
             $('#book-now-dropdown').removeClass('border-gold').addClass('border-[#555555]');
             $('#book-now-dropdown-options').attr('aria-hidden', 'true');
             $('#book-now-dropdown-options').removeClass('flex').addClass('hidden');
+        }
+        if ($('#brewery-book-now-dropdown-options').attr('aria-hidden') === 'false') {
+            $('#brewery-book-now-dropdown').removeClass('border-gold').addClass('border-[#555555]');
+            $('#brewery-book-now-dropdown-options').attr('aria-hidden', 'true');
+            $('#brewery-book-now-dropdown-options').removeClass('flex').addClass('hidden');
         }
 
     });

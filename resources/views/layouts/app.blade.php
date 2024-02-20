@@ -17,7 +17,7 @@
         @yield('head')
     </head>
 
-    <body class="font-nonito mt-[104px]">
+    <body class="font-nunito mt-[104px]">
         <div class="absolute left-0 top-0 z-40 hidden h-full w-full bg-black opacity-70" id="curtain"></div>
         <x-navigation.navbar />
         {{ $slot }}
