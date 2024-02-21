@@ -87,5 +87,16 @@
             </p>
         </x-block.image-and-content>
 
+        {{-- view offers block --}}
+        <x-block.signature-block
+            :heading="'PAY TO STAY'"
+            :description="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fuga architecto dolorum
+            autem voluptatem expedita totam modi quos error aut corrupti eum voluptate vero consequatur deleniti
+            corporis, dolor incidunt, unde dolorem. Inventore ullam natus, quibusdam iure quidem, iste fuga accusantium
+            impedit est commodi error molestias nulla quod vero magni illo.'"
+            :ctaLabel="'VIEW OFFERS'"
+            :ctaLink="Route::has('offers') ? route('offers') : '#'"
+        />
+
     </div>
 </x-app-layout>
