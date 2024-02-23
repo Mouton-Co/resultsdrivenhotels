@@ -87,6 +87,9 @@
             </p>
         </x-block.image-and-content>
 
+        {{-- accomodation carousel --}}
+        <x-block.press-release-carousel />
+
         {{-- view offers block --}}
         <x-block.signature-block
             :heading="'PAY TO STAY'"
