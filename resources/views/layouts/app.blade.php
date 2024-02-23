@@ -21,6 +21,7 @@
         <div class="absolute left-0 top-0 z-40 hidden h-full w-full bg-black opacity-70" id="curtain"></div>
         <x-navigation.navbar />
         {{ $slot }}
+        <x-navigation.footer />
     </body>
 
 </html>
