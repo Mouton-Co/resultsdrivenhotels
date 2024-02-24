@@ -3,15 +3,15 @@
     <div class="flex flex-col items-center justify-center">
         
         <x-block.standard-header
-            :title="__('Weddings')"
+            :title="$title ?? 'Gallery'"
             :background="
                 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),'.
-                'url('.asset('images/headers/weddings.jpeg').')'
+                'url('.$headerImage ?? ''.')'
             "
         />
         
         <x-block.gallery
-            :folder="'weddings'"
+            :images="$images ?? []"
         />
 
     </div>

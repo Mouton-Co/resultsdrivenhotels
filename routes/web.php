@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GalleryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,22 +38,7 @@ Route::get('news', function () {
 })->name('news');
 
 // experiences and occasions
-Route::group(['prefix' => 'experiences-and-occasions'], function () {
-    $experiences = [
-        'weddings',
-        'celebrations',
-        'honeymoons',
-        'meetings-and-events',
-        'family-experiences',
-        'exclusive-takeovers',
-        'incentives',
-    ];
-    foreach ($experiences as $experience) {
-        Route::get($experience, function () use ($experience) {
-            return view('pages.experiences-and-occasions.'.$experience);
-        })->name('experiences-and-occasions.'.$experience);
-    }
-});
+Route::get('experiences-and-occasions/{experience}', [GalleryController::class, 'index']);
 
 // news
 Route::group(['prefix' => 'news'], function () {
