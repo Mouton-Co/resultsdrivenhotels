@@ -84,25 +84,25 @@ smaller-than-730:justify-end" aria-label="information-bar">
         <x-navigation.label class="relative" id="experiences-link">
             {{ __('EXPERIECES AND OCCASIONS') }}
             <x-navigation.dropdown id="experiences-dropdown" style="height: 0px;">
-                <x-navigation.dropdown-link class="pt-5" href="{{ route('experiences-and-occasions.weddings') }}">
+                <x-navigation.dropdown-link class="pt-5" href="{{ route('experiences-and-occasions', 'weddings') }}">
                     {{ __('Weddings') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions.celebrations') }}">
+                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'celebrations') }}">
                     {{ __('Celebrations') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions.honeymoons') }}">
+                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'honeymoons') }}">
                     {{ __('Honeymoons') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions.meetings-and-events') }}">
+                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'meetings-and-events') }}">
                     {{ __('Meetings & Events') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions.family-experiences') }}">
+                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'family-experiences') }}">
                     {{ __('Family Experiences') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions.exclusive-takeovers') }}">
+                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'exclusive-takeovers') }}">
                     {{ __('Exclusive Takeovers') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link class="pb-5" href="{{ route('experiences-and-occasions.incentives') }}">
+                <x-navigation.dropdown-link class="pb-5" href="{{ route('experiences-and-occasions', 'incentives') }}">
                     {{ __('Incentives') }}
                 </x-navigation.dropdown-link>
             </x-navigation.dropdown>
@@ -167,28 +167,28 @@ duration-500" id="mobile-menu" aria-label="mobile-menu" style="width: 0px;">
     </x-navigation.mobile-label>
     <div class="w-full shrink-0 overflow-hidden pl-[55px] transition-all duration-500"
         id="experiences-dropdown-mobile" aria-hidden="true" style="height: 0px">
-        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions.weddings') }}">
+        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'weddings') }}">
             {{ __('Weddings') }}
         </x-navigation.mobile-link>
-        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions.celebrations') }}">
+        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'celebrations') }}">
             {{ __('Celebrations') }}
         </x-navigation.mobile-link>
-        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions.honeymoons') }}">
+        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'honeymoons') }}">
             {{ __('Honeymoons') }}
         </x-navigation.mobile-link>
         <x-navigation.mobile-link class="mt-[34px]"
-            href="{{ route('experiences-and-occasions.meetings-and-events') }}">
+            href="{{ route('experiences-and-occasions', 'meetings-and-events') }}">
             {{ __('Meetings & Events') }}
         </x-navigation.mobile-link>
         <x-navigation.mobile-link class="mt-[34px]"
-            href="{{ route('experiences-and-occasions.family-experiences') }}">
+            href="{{ route('experiences-and-occasions', 'family-experiences') }}">
             {{ __('Family Experiences') }}
         </x-navigation.mobile-link>
         <x-navigation.mobile-link class="mt-[34px]"
-            href="{{ route('experiences-and-occasions.exclusive-takeovers') }}">
+            href="{{ route('experiences-and-occasions', 'exclusive-takeovers') }}">
             {{ __('Exclusive Takeovers') }}
         </x-navigation.mobile-link>
-        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions.incentives') }}">
+        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'incentives') }}">
             {{ __('Incentives') }}
         </x-navigation.mobile-link>
     </div>
