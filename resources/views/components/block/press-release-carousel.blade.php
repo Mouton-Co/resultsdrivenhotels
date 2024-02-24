@@ -36,5 +36,11 @@
 
             </div>
         </div>
+        <a class="bg-gold font-merriweather max-w-64 hover:bg-offblack group flex h-14 w-full items-center
+        justify-center gap-3 text-sm text-white shadow transition-all duration-300 mt-14"
+        href="{{ route('news') }}">
+            {{ 'View all' }}
+            <x-icon.arrow-thin class="h-7 w-7 transition-all duration-300 group-hover:translate-x-3" />
+        </a>
     </div>
 </div>
