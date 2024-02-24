@@ -8,6 +8,18 @@ class GalleryController extends Controller
 {
     public function index($experience)
     {
+        if (!in_array($experience, [
+            'weddings',
+            'celebrations',
+            'honeymoons',
+            'meetings-and-events',
+            'family-experiences',
+            'exclusive-takeovers',
+            'incentives'
+        ])) {
+            abort(404);
+        }
+
         $title = $this->getTitle($experience);
         $headerImage = asset("images/headers/$experience.jpeg");
         $images = \File::allFiles(public_path('images/galleries/' . $experience));
