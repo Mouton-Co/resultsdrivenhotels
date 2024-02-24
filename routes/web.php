@@ -27,9 +27,7 @@ Route::get('about-us', function () {
 Route::get('contact-us', function () {
     return view('pages.contact-us');
 })->name('contact-us');
-Route::get('gallery', function () {
-    return view('pages.gallery');
-})->name('gallery');
+Route::get('gallery', [GalleryController::class, 'all'])->name('gallery');
 Route::get('experiences-and-occasions', function () {
     return view('pages.experiences-and-occasions');
 })->name('experiences-and-occasions');
