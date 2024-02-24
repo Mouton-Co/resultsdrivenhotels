@@ -11,6 +11,7 @@
         />
         
         <x-block.gallery
+            :folder="$experience ?? ''"
             :images="$images ?? []"
         />
 

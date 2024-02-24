@@ -22,9 +22,20 @@ class GalleryController extends Controller
 
         $title = $this->getTitle($experience);
         $headerImage = asset("images/headers/$experience.jpeg");
-        $images = \File::allFiles(public_path('images/galleries/' . $experience));
+        $folder = \File::allFiles(public_path('images/galleries/' . $experience));
 
-        return view('pages.experiences-and-occasions.template', compact('title', 'headerImage', 'images'));
+        // grab 40 random images from folder for now
+        $images = [];
+        for ($i = 0; $i < 40; $i++) {
+            $images[] = $folder[array_rand($folder)];
+        }
+
+        return view('pages.experiences-and-occasions.template', compact(
+            'title',
+            'headerImage',
+            'images',
+            'experience'
+        ));
     }
 
     protected function getTitle($experience)

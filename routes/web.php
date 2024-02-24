@@ -38,7 +38,10 @@ Route::get('news', function () {
 })->name('news');
 
 // experiences and occasions
-Route::get('experiences-and-occasions/{experience}', [GalleryController::class, 'index']);
+Route::get(
+    'experiences-and-occasions/{experience}',
+    [GalleryController::class, 'index']
+)->name('experiences-and-occasions');
 
 // news
 Route::group(['prefix' => 'news'], function () {
