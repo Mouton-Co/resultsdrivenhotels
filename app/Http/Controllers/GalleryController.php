@@ -15,7 +15,7 @@ class GalleryController extends Controller
             'meetings-and-events',
             'family-experiences',
             'exclusive-takeovers',
-            'incentives'
+            'incentives',
         ])) {
             abort(404);
         }
@@ -30,12 +30,32 @@ class GalleryController extends Controller
             $images[] = $folder[array_rand($folder)];
         }
 
-        return view('pages.experiences-and-occasions.template', compact(
-            'title',
-            'headerImage',
-            'images',
-            'experience'
-        ));
+        return view('pages.experiences-and-occasions.template', [
+            'title'       => $title,
+            'headerImage' => $headerImage,
+            'images'      => $images,
+            'dir'        => 'images/galleries/' . $experience,
+        ]);
+    }
+
+    public function all()
+    {
+        $title = 'Gallery';
+        $headerImage = asset('images/headers/weddings.jpeg');
+        $folder = \File::allFiles(public_path('images/galleries'));
+
+        // grab 40 random images from folder for now
+        $images = [];
+        for ($i = 0; $i < 40; $i++) {
+            $images[] = $folder[array_rand($folder)];
+        }
+
+        return view('pages.experiences-and-occasions.template', [
+            'title'       => $title,
+            'headerImage' => $headerImage,
+            'images'      => $images,
+            'dir'        => 'images/galleries',
+        ]);
     }
 
     protected function getTitle($experience)

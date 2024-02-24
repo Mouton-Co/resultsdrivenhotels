@@ -16,7 +16,7 @@
             veritatis, quo voluptatum, quasi, dignissimos odio laboriosam commodi error obcaecati quidem. Perspiciatis
             ex labore ducimus qui suscipit! Cupiditate tempora qui aspernatur laborum nam incidunt? Quas, blanditiis
             atque?'"
-            :image="'images/logos/rdhs-informal-logo.png'"
+            :image="'images/logos/logo-icon-green.png'"
             :link="'about-us'"
             :linkLabel="'Read more...'"
         />
