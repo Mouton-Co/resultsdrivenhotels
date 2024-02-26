@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use ImageOptimizer;
-
 class GalleryController extends Controller
 {
     public function index($experience)
     {
-        if (!in_array($experience, [
+        if (! in_array($experience, [
             'weddings',
             'celebrations',
             'honeymoons',
@@ -22,7 +20,7 @@ class GalleryController extends Controller
 
         $title = $this->getTitle($experience);
         $headerImage = asset("images/headers/$experience.jpeg");
-        $folder = \File::allFiles(public_path('images/galleries/' . $experience));
+        $folder = \File::allFiles(public_path('images/galleries/'.$experience));
 
         // grab 40 random images from folder for now
         $images = [];
@@ -31,10 +29,10 @@ class GalleryController extends Controller
         }
 
         return view('pages.experiences-and-occasions.template', [
-            'title'       => $title,
+            'title' => $title,
             'headerImage' => $headerImage,
-            'images'      => $images,
-            'dir'        => 'images/galleries/' . $experience,
+            'images' => $images,
+            'dir' => 'images/galleries/'.$experience,
         ]);
     }
 
@@ -51,23 +49,23 @@ class GalleryController extends Controller
         }
 
         return view('pages.experiences-and-occasions.template', [
-            'title'       => $title,
+            'title' => $title,
             'headerImage' => $headerImage,
-            'images'      => $images,
-            'dir'        => 'images/galleries',
+            'images' => $images,
+            'dir' => 'images/galleries',
         ]);
     }
 
     protected function getTitle($experience)
     {
         $experiences = [
-            'weddings'            => 'Weddings',
-            'celebrations'        => 'Celebrations',
-            'honeymoons'          => 'Honeymoons',
+            'weddings' => 'Weddings',
+            'celebrations' => 'Celebrations',
+            'honeymoons' => 'Honeymoons',
             'meetings-and-events' => 'Meetings and Events',
-            'family-experiences'  => 'Family Experiences',
+            'family-experiences' => 'Family Experiences',
             'exclusive-takeovers' => 'Exclusive Takeovers',
-            'incentives'          => 'Incentives',
+            'incentives' => 'Incentives',
         ];
 
         return $experiences[$experience];

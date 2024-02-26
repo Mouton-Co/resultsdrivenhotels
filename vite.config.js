@@ -10,6 +10,7 @@ export default defineConfig({
                 'resources/js/homepage-header.js',
                 'resources/js/dropdowns.js',
                 'resources/js/cards-carousel.js',
+                'resources/js/our-services.js',
             ],
             refresh: true,
         }),

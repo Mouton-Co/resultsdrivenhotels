@@ -82,7 +82,7 @@
     sm:h-36 sm:flex-row sm:px-0">
         {{-- Dropdown --}}
         <div class="book-now-dropdown relative flex w-full cursor-pointer items-center justify-between gap-6 border
-        border-[#555555] px-5 py-4 text-offgray transition-all duration-300 sm:w-[320px]" id="book-now-dropdown">
+        border-[#555555] px-5 py-4 text-offgrey transition-all duration-300 sm:w-[320px]" id="book-now-dropdown">
             <span class="book-now-dropdown" id="book-now-dropdown-selected">{{ __('Hotel Krige') }}</span>
             <x-icon.arrow class="book-now-dropdown h-5 w-5" />
             {{-- Dropdown options --}}

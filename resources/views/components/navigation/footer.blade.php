@@ -20,6 +20,17 @@
                     {{ __('Stellenbosch, 7600') }}
                 </a>
             </div>
+            <div class="w-full flex justify-center items-center gap-6">
+                <a href="#" target="_blank">
+                    <x-icon.facebook class="hover:text-gold h-5 w-5" />
+                </a>
+                <a href="#" target="_blank">
+                    <x-icon.instagram class="hover:text-gold h-5 w-5" />
+                </a>
+                <a href="#" target="_blank">
+                    <x-icon.linkedin class="hover:text-gold h-5 w-5" />
+                </a>
+            </div>
         </div>
 
         {{-- logo description --}}

@@ -21,7 +21,7 @@
 
         <div class="h-[1px] w-[60px] bg-offblack"></div>
         @if (!empty($description))
-            <p class="font-nunito line-clamp-4 text-sm font-extralight leading-6 text-offgray">
+            <p class="font-nunito line-clamp-4 text-sm font-extralight leading-6 text-offgrey">
                 {{ $description }}
             </p>
         @endif

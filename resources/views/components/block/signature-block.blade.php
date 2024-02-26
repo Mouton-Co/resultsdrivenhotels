@@ -4,7 +4,7 @@
         {{ $heading ?? '' }}
     </h1>
     <div class="bg-gold h-[1px] w-24"></div>
-    <p class="text-offgray max-w-[54rem] text-center text-lg font-extralight leading-6 tracking-widest">
+    <p class="text-offgrey max-w-[54rem] text-center text-lg font-extralight leading-6 tracking-widest">
         {{ $description ?? '' }}
     </p>
     <a class="bg-gold font-merriweather mt-3 max-w-64 hover:bg-offblack group flex h-14 w-full items-center

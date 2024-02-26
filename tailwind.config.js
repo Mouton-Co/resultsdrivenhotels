@@ -24,7 +24,8 @@ export default {
                 gold: '#c59d5f',
                 offwhite: '#d9d9d9',
                 offblack: '#1a1a1a',
-                offgray: '#999999',
+                offgrey: '#999999',
+                logogreen: '#607562',
                 ...defaultTheme.colors,
             }
         },
