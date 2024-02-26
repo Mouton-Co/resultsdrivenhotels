@@ -12,10 +12,9 @@
         {{-- info block --}}
         <x-block.info
             :title="'LUXURY MEETS EXCEPTIONAL'"
-            :description="'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aspernatur ex natus cumque
-            veritatis, quo voluptatum, quasi, dignissimos odio laboriosam commodi error obcaecati quidem. Perspiciatis
-            ex labore ducimus qui suscipit! Cupiditate tempora qui aspernatur laborum nam incidunt? Quas, blanditiis
-            atque?'"
+            :description="'Welcome to Results Driven Hospitality Services, where luxury meets exceptional experiences.
+            Established in 2022, we take pride in curating unforgettable moments for our guests, offering a portfolio
+            of distinctive 4-star properties nestled in the captivating landscapes of the Western Cape, South Africa.'"
             :image="'images/logos/logo-icon-green.png'"
             :link="'about-us'"
             :linkLabel="'Read more...'"
@@ -33,7 +32,7 @@
                 {{ __('RESTAURANTS AND BREWERY') }}
                 <span class="bg-gold -translate-1/2 absolute right-0 top-1/2 h-[1px] w-24"></span>
             </h1>
-            <p class="text-offgray mt-6 w-full font-extralight leading-6 sm:pr-24 md:pr-48 md:text-lg">
+            <p class="text-offgrey mt-6 w-full font-extralight leading-6 sm:pr-24 md:pr-48 md:text-lg">
                 {{
                     __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sed reprehenderit, consectetur
                     facilis alias, perspiciatis ipsam libero minus veritatis corporis quam ab error non illum vero
@@ -42,7 +41,7 @@
                 }}
             </p>
             <div class="mt-6 flex w-full flex-col items-center justify-center gap-3 sm:flex-row md:justify-start">
-                <div class="brewery-book-now-dropdown text-offgray md:max-w-80 relative flex h-14 w-full
+                <div class="brewery-book-now-dropdown text-offgrey md:max-w-80 relative flex h-14 w-full
                 cursor-pointer items-center justify-between gap-6 border border-[#555555] px-5 py-4 shadow
                 transition-all duration-300" id="brewery-book-now-dropdown">
                     <span class="brewery-book-now-dropdown" id="brewery-book-now-dropdown-selected">
@@ -77,7 +76,7 @@
                 {{ __('EXPERIENCES AND OCCASIONS') }}
                 <span class="bg-gold -translate-1/2 absolute right-0 top-1/2 h-[1px] w-24"></span>
             </h1>
-            <p class="text-offgray mt-6 w-full font-extralight leading-6 sm:pr-24 md:pr-48 md:text-lg">
+            <p class="text-offgrey mt-6 w-full font-extralight leading-6 sm:pr-24 md:pr-48 md:text-lg">
                 {{
                     __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sed reprehenderit, consectetur
                     facilis alias, perspiciatis ipsam libero minus veritatis corporis quam ab error non illum vero

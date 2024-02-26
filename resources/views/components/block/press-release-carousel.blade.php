@@ -5,7 +5,7 @@
             {{ __('LATEST NEWS') }}
         </h1>
         <div class="bg-gold my-5 h-[1px] w-[125px]"></div>
-        <p class="text-md font-nunito mb-14 max-w-[600px] px-12 text-center font-extralight text-offgray sm:text-lg">
+        <p class="text-md font-nunito mb-14 max-w-[600px] px-12 text-center font-extralight text-offgrey sm:text-lg">
             {{ __("Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's") }}
         </p>
