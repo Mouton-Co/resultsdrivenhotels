@@ -22,5 +22,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Blade::component('app-layout', AppLayout::class);
+        \URL::forceScheme('https');
     }
 }
