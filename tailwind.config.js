@@ -25,6 +25,7 @@ export default {
                 offwhite: '#d9d9d9',
                 offblack: '#1a1a1a',
                 offgrey: '#999999',
+                offlightgrey: '#555555',
                 logogreen: '#607562',
                 ...defaultTheme.colors,
             }
