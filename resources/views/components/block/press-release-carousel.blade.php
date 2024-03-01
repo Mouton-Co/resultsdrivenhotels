@@ -1,7 +1,7 @@
 <div class="flex w-full items-center justify-center bg-[#f7f5f5]">
     <div class="flex w-full max-w-[1200px] flex-col items-center justify-center py-12 sm:py-24">
-        <h1 class="text-wrap sm:text-nowrap font-nunito w-fit px-12 text-center text-4xl font-normal
-        tracking-[3.5px] text-offblack sm:text-5xl">
+        <h1 class="text-wrap sm:text-nowrap font-nunito w-fit px-12 text-center text-3xl font-normal
+        tracking-[3.5px] text-offblack sm:text-4xl">
             {{ __('LATEST NEWS') }}
         </h1>
         <div class="bg-gold my-5 h-[1px] w-[125px]"></div>

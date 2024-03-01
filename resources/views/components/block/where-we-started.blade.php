@@ -16,7 +16,7 @@
                 </h1>
                 <div class="bg-gold h-[1px] w-11/12"></div>
             </div>
-            <p class="text-offgrey pl-6 text-center sm:text-left md:pl-0">
+            <p class="text-offgrey text-center sm:text-left pl-0 sm:pl-6 md:pl-0">
                 {{
                     __('Our journey began with a passion for hospitality and a commitment to crafting spaces where
                     every detail is thoughtfully designed to provide unparalleled comfort and joy. From a charming
