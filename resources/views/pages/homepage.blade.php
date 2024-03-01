@@ -24,9 +24,9 @@
         <x-block.accommodation-carousel />
 
         {{-- brewery image and content --}}
-        <x-block.image-and-content :image="'images/general/main-home-img-5.jpg'">
+        <x-block.image-and-content :image="'images/general/food.jpeg'">
             <span class="font-merriweather text-gold text-sm italic">
-                {{ __('Winelands') }}
+                {{ __('Culinary Journeys') }}
             </span>
             <h1 class="text-offblack relative mt-3 max-w-fit pr-24 text-3xl tracking-widest sm:pr-32">
                 {{ __('RESTAURANTS AND BREWERY') }}
@@ -34,10 +34,9 @@
             </h1>
             <p class="text-offgrey mt-6 w-full font-extralight leading-6 sm:pr-24 md:pr-48 md:text-lg">
                 {{
-                    __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sed reprehenderit, consectetur
-                    facilis alias, perspiciatis ipsam libero minus veritatis corporis quam ab error non illum vero
-                    pariatur illo voluptatibus modi qui esse cupiditate, tenetur debitis consequuntur! Iste distinctio
-                    voluptatibus eius!')
+                    __("Cape Town, known for its stunning landscapes and vibrant culture, also boasts a culinary scene
+                    that's as diverse and exciting as the city itself. From trendy bistros to cozy cafes and innovative
+                    breweries, there's something to delight every palate.")
                 }}
             </p>
             <div class="mt-6 flex w-full flex-col items-center justify-center gap-3 sm:flex-row md:justify-start">
@@ -68,9 +67,9 @@
         </x-block.image-and-content>
 
         {{-- brewery image and content --}}
-        <x-block.image-and-content :image="'images/general/main-home-img-6.jpg'" :imageRight="true">
+        <x-block.image-and-content :image="'images/general/wedding_at_frank.png'" :imageRight="true">
             <span class="font-merriweather text-gold text-sm italic">
-                {{ __('Winelands') }}
+                {{ __('Memorable adventures') }}
             </span>
             <h1 class="text-offblack relative mt-3 max-w-fit pr-24 text-3xl tracking-widest sm:pr-32">
                 {{ __('EXPERIENCES AND OCCASIONS') }}
@@ -78,10 +77,10 @@
             </h1>
             <p class="text-offgrey mt-6 w-full font-extralight leading-6 sm:pr-24 md:pr-48 md:text-lg">
                 {{
-                    __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sed reprehenderit, consectetur
-                    facilis alias, perspiciatis ipsam libero minus veritatis corporis quam ab error non illum vero
-                    pariatur illo voluptatibus modi qui esse cupiditate, tenetur debitis consequuntur! Iste distinctio
-                    voluptatibus eius!')
+                    __("Amidst the stunning vistas of the Western Cape, Results Driven Hospitality Services is
+                    dedicated to crafting unparalleled experiences and unforgettable occasions for visitors worldwide.
+                    From the enchanting vineyards of Stellenbosch to the idyllic shores of Cape Town's pristine beaches,
+                    every corner of this region beckons with boundless opportunities for exploration and celebration.")
                 }}
             </p>
         </x-block.image-and-content>
@@ -91,11 +90,10 @@
 
         {{-- view offers block --}}
         <x-block.signature-block
-            :heading="'PAY TO STAY'"
-            :description="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fuga architecto dolorum
-            autem voluptatem expedita totam modi quos error aut corrupti eum voluptate vero consequatur deleniti
-            corporis, dolor incidunt, unde dolorem. Inventore ullam natus, quibusdam iure quidem, iste fuga accusantium
-            impedit est commodi error molestias nulla quod vero magni illo.'"
+            :heading="'SPECIAL OFFERS'"
+            :description="'Discover exclusive offers for our hotels and restaurants. Featuring enticing room packages
+            and dining discounts, there\'s something for every occasion. Whether you\'re planning a romantic escape,
+            family retreat, or business journey, these special deals ensure an unforgettable experience.'"
             :ctaLabel="'VIEW OFFERS'"
             :ctaLink="Route::has('offers') ? route('offers') : '#'"
         />
