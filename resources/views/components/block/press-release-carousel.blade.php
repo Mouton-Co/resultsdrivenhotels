@@ -6,8 +6,7 @@
         </h1>
         <div class="bg-gold my-5 h-[1px] w-[125px]"></div>
         <p class="text-md font-nunito mb-14 max-w-[600px] px-12 text-center font-extralight text-offgrey sm:text-lg">
-            {{ __("Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's") }}
+            {{ __("Discover the latest updates and insights in the world of hospitality.") }}
         </p>
         <div class="w-full px-8 sm:px-12">
             <div class="swiper h-[500px] w-full" id="cards-carousel">
