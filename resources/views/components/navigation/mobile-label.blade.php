@@ -5,7 +5,7 @@
 <div
     {{ $attributes->merge([
         'class' => "flex cursor-pointer items-center gap-[17px] px-[26px] text-sm font-normal $color
-            hover:text-gold text-nowrap",
+            hover:text-gold text-nowrap whitespace-nowrap",
     ]) }}>
     {{ $slot }}
 </div>

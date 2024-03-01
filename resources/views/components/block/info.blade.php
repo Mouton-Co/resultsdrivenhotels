@@ -4,7 +4,7 @@
     @endisset
     <div class="flex flex-col items-center">
         <div class="mb-6 flex w-full flex-col items-center justify-start gap-6 sm:flex-row">
-            <h1 class="text-wrap sm:text-nowrap font-nunito w-fit text-center text-3xl font-normal tracking-[3.5px]
+            <h1 class="text-wrap sm:text-nowrap whitespace-nowrap font-nunito w-fit text-center text-3xl font-normal tracking-[3.5px]
             text-offblack sm:text-left sm:text-4xl">
                 {{ $title ?? '' }}
             </h1>
