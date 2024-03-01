@@ -2,12 +2,12 @@ export function dropdowns() {
     $('#book-now-dropdown').on('click', function (e) {
         if ($('#book-now-dropdown-options').attr('aria-hidden') === 'true') {
             let top = openTop('book-now-dropdown') ? '-217.5px' : '56.5px';
-            $(this).removeClass('border-[#555555]').addClass('border-gold');
+            $(this).removeClass('border-offlightgrey').addClass('border-gold');
             $('#book-now-dropdown-options').css('top', top);
             $('#book-now-dropdown-options').attr('aria-hidden', 'false');
             $('#book-now-dropdown-options').removeClass('hidden').addClass('flex');
         } else {
-            $(this).removeClass('border-gold').addClass('border-[#555555]');
+            $(this).removeClass('border-gold').addClass('border-offlightgrey');
             $('#book-now-dropdown-options').attr('aria-hidden', 'true');
             $('#book-now-dropdown-options').removeClass('flex').addClass('hidden');
         }
@@ -23,7 +23,7 @@ export function dropdowns() {
             { name: 'Franks Corner', url: 'https://www.dineplan.com/restaurants/franks-corner-bar-and-grill' }
         ];
 
-        $(this).removeClass('border-gold').addClass('border-[#555555]');
+        $(this).removeClass('border-gold').addClass('border-offlightgrey');
         $('#book-now-dropdown-options').attr('aria-hidden', 'true');
         $('#book-now-dropdown-options').removeClass('flex').addClass('hidden');
 
@@ -39,12 +39,12 @@ export function dropdowns() {
     $('#brewery-book-now-dropdown').on('click', function (e) {
         if ($('#brewery-book-now-dropdown-options').attr('aria-hidden') === 'true') {
             let top = openTop('brewery-book-now-dropdown') ? '-97.5px' : '56.5px';
-            $(this).removeClass('border-[#555555]').addClass('border-gold');
+            $(this).removeClass('border-offlightgrey').addClass('border-gold');
             $('#brewery-book-now-dropdown-options').css('top', top);
             $('#brewery-book-now-dropdown-options').attr('aria-hidden', 'false');
             $('#brewery-book-now-dropdown-options').removeClass('hidden').addClass('flex');
         } else {
-            $(this).removeClass('border-gold').addClass('border-[#555555]');
+            $(this).removeClass('border-gold').addClass('border-offlightgrey');
             $('#brewery-book-now-dropdown-options').attr('aria-hidden', 'true');
             $('#brewery-book-now-dropdown-options').removeClass('flex').addClass('hidden');
         }
@@ -56,7 +56,7 @@ export function dropdowns() {
             { name: 'Franks Corner', url: 'https://www.dineplan.com/restaurants/franks-corner-bar-and-grill' }
         ];
 
-        $(this).removeClass('border-gold').addClass('border-[#555555]');
+        $(this).removeClass('border-gold').addClass('border-offlightgrey');
         $('#brewery-book-now-dropdown-options').attr('aria-hidden', 'true');
         $('#brewery-book-now-dropdown-options').removeClass('flex').addClass('hidden');
 
@@ -86,12 +86,12 @@ export function dropdowns() {
 
         /* here you can code what to do when click on html */
         if ($('#book-now-dropdown-options').attr('aria-hidden') === 'false') {
-            $('#book-now-dropdown').removeClass('border-gold').addClass('border-[#555555]');
+            $('#book-now-dropdown').removeClass('border-gold').addClass('border-offlightgrey');
             $('#book-now-dropdown-options').attr('aria-hidden', 'true');
             $('#book-now-dropdown-options').removeClass('flex').addClass('hidden');
         }
         if ($('#brewery-book-now-dropdown-options').attr('aria-hidden') === 'false') {
-            $('#brewery-book-now-dropdown').removeClass('border-gold').addClass('border-[#555555]');
+            $('#brewery-book-now-dropdown').removeClass('border-gold').addClass('border-offlightgrey');
             $('#brewery-book-now-dropdown-options').attr('aria-hidden', 'true');
             $('#brewery-book-now-dropdown-options').removeClass('flex').addClass('hidden');
         }

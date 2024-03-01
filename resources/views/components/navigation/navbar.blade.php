@@ -3,7 +3,7 @@
 smaller-than-730:justify-end" aria-label="information-bar">
     {{-- contact information --}}
     <div class="flex w-fit items-center gap-3 smaller-than-730:hidden">
-        <a class="flex h-full items-center gap-2 text-[12px] text-[#555555] transition-all duration-300
+        <a class="flex h-full items-center gap-2 text-[12px] text-offlightgrey transition-all duration-300
         hover:text-[#f5f5f5]"
             href="mailto:info@resultsdrivenhotels.com" target="_blank">
             <x-icon.email class="h-4 w-4" />
@@ -11,8 +11,8 @@ smaller-than-730:justify-end" aria-label="information-bar">
                 {{ __('info@resultsdrivenhotels.com') }}
             </span>
         </a>
-        <span class="text-[#555555]">{{ __('|') }}</span>
-        <a class="flex h-full items-center gap-2 text-[12px] text-[#555555] transition-all duration-300
+        <span class="text-offlightgrey">{{ __('|') }}</span>
+        <a class="flex h-full items-center gap-2 text-[12px] text-offlightgrey transition-all duration-300
         hover:text-[#f5f5f5]"
             href="https://maps.app.goo.gl/cvoYnXovfk6WPP9y7" target="_blank">
             <x-icon.pin class="h-4 w-4" />
@@ -25,13 +25,13 @@ smaller-than-730:justify-end" aria-label="information-bar">
     {{-- socials --}}
     <div class="flex w-fit items-center gap-4">
         <a href="#">
-            <x-icon.facebook class="h-6 text-[#555555] hover:text-[#f5f5f5]" />
+            <x-icon.facebook class="h-6 text-offlightgrey hover:text-[#f5f5f5]" />
         </a>
         <a href="#">
-            <x-icon.instagram class="h-6 text-[#555555] hover:text-[#f5f5f5]" />
+            <x-icon.instagram class="h-6 text-offlightgrey hover:text-[#f5f5f5]" />
         </a>
         <a href="#">
-            <x-icon.linkedin class="h-6 text-[#555555] hover:text-[#f5f5f5]" />
+            <x-icon.linkedin class="h-6 text-offlightgrey hover:text-[#f5f5f5]" />
         </a>
     </div>
 </nav>
@@ -81,39 +81,47 @@ smaller-than-730:justify-end" aria-label="information-bar">
                 </x-navigation.dropdown-link>
             </x-navigation.dropdown>
         </x-navigation.label>
-        <x-navigation.label class="relative" id="experiences-link">
+        <x-navigation.label class="relative" id="experiences-link"
+        :active="request()->segment(1) == 'experiences-and-occasions'">
             {{ __('EXPERIECES AND OCCASIONS') }}
             <x-navigation.dropdown id="experiences-dropdown" style="height: 0px;">
-                <x-navigation.dropdown-link class="pt-5" href="{{ route('experiences-and-occasions', 'weddings') }}">
+                <x-navigation.dropdown-link class="pt-5" href="{{ route('experiences-and-occasions', 'weddings') }}"
+                :active="request()->segment(2) == 'weddings'">
                     {{ __('Weddings') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'celebrations') }}">
+                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'celebrations') }}"
+                :active="request()->segment(2) == 'celebrations'">
                     {{ __('Celebrations') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'honeymoons') }}">
+                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'honeymoons') }}"
+                :active="request()->segment(2) == 'honeymoons'">
                     {{ __('Honeymoons') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'meetings-and-events') }}">
+                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'meetings-and-events') }}"
+                :active="request()->segment(2) == 'meetings-and-events'">
                     {{ __('Meetings & Events') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'family-experiences') }}">
+                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'family-experiences') }}"
+                :active="request()->segment(2) == 'family-experiences'">
                     {{ __('Family Experiences') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'exclusive-takeovers') }}">
+                <x-navigation.dropdown-link href="{{ route('experiences-and-occasions', 'exclusive-takeovers') }}"
+                :active="request()->segment(2) == 'exclusive-takeovers'">
                     {{ __('Exclusive Takeovers') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link class="pb-5" href="{{ route('experiences-and-occasions', 'incentives') }}">
+                <x-navigation.dropdown-link class="pb-5" href="{{ route('experiences-and-occasions', 'incentives') }}"
+                :active="request()->segment(2) == 'incentives'">
                     {{ __('Incentives') }}
                 </x-navigation.dropdown-link>
             </x-navigation.dropdown>
         </x-navigation.label>
-        <x-navigation.link href="{{ route('gallery') }}">
+        <x-navigation.link href="{{ route('gallery') }}" :active="request()->segment(1) == 'gallery'">
             {{ __('GALLERY') }}
         </x-navigation.link>
-        <x-navigation.link href="{{ route('about-us') }}">
+        <x-navigation.link href="{{ route('about-us') }}" :active="request()->segment(1) == 'about-us'">
             {{ __('ABOUT US') }}
         </x-navigation.link>
-        <x-navigation.link href="{{ route('contact-us') }}">
+        <x-navigation.link href="{{ route('contact-us') }}" :active="request()->segment(1) == 'contact-us'">
             {{ __('CONTACT US') }}
         </x-navigation.link>
     </div>
@@ -161,46 +169,57 @@ duration-500" id="mobile-menu" aria-label="mobile-menu" style="width: 0px;">
             {{ __('Franks Corner') }}
         </x-navigation.mobile-link>
     </div>
-    <x-navigation.mobile-label class="mt-[36px]" id="experiences-link-mobile">
+    <x-navigation.mobile-label class="mt-[36px]" id="experiences-link-mobile"
+    :active="request()->segment(1) == 'experiences-and-occasions'">
         <x-icon.wineglasses class="h-5 w-5" />
         {{ __('EXPERIECES AND OCCASIONS') }}
     </x-navigation.mobile-label>
     <div class="w-full shrink-0 overflow-hidden pl-[55px] transition-all duration-500"
         id="experiences-dropdown-mobile" aria-hidden="true" style="height: 0px">
-        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'weddings') }}">
+        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'weddings') }}"
+        :active="request()->segment(2) == 'weddings'">
             {{ __('Weddings') }}
         </x-navigation.mobile-link>
-        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'celebrations') }}">
+        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'celebrations') }}"
+        :active="request()->segment(2) == 'celebrations'">
             {{ __('Celebrations') }}
         </x-navigation.mobile-link>
-        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'honeymoons') }}">
+        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'honeymoons') }}"
+        :active="request()->segment(2) == 'honeymoons'">
             {{ __('Honeymoons') }}
         </x-navigation.mobile-link>
         <x-navigation.mobile-link class="mt-[34px]"
-            href="{{ route('experiences-and-occasions', 'meetings-and-events') }}">
+            href="{{ route('experiences-and-occasions', 'meetings-and-events') }}"
+            :active="request()->segment(2) == 'meetings-and-events'">
             {{ __('Meetings & Events') }}
         </x-navigation.mobile-link>
         <x-navigation.mobile-link class="mt-[34px]"
-            href="{{ route('experiences-and-occasions', 'family-experiences') }}">
+            href="{{ route('experiences-and-occasions', 'family-experiences') }}"
+            :active="request()->segment(2) == 'family-experiences'">
             {{ __('Family Experiences') }}
         </x-navigation.mobile-link>
         <x-navigation.mobile-link class="mt-[34px]"
-            href="{{ route('experiences-and-occasions', 'exclusive-takeovers') }}">
+            href="{{ route('experiences-and-occasions', 'exclusive-takeovers') }}"
+            :active="request()->segment(2) == 'exclusive-takeovers'">
             {{ __('Exclusive Takeovers') }}
         </x-navigation.mobile-link>
-        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'incentives') }}">
+        <x-navigation.mobile-link class="mt-[34px]" href="{{ route('experiences-and-occasions', 'incentives') }}"
+        :active="request()->segment(2) == 'incentives'">
             {{ __('Incentives') }}
         </x-navigation.mobile-link>
     </div>
-    <x-navigation.mobile-link class="mt-[36px]" href="{{ route('gallery') }}">
+    <x-navigation.mobile-link class="mt-[36px]" href="{{ route('gallery') }}"
+    :active="request()->segment(1) == 'gallery'">
         <x-icon.gallery class="h-5 w-5" />
         {{ __('GALLERY') }}
     </x-navigation.mobile-link>
-    <x-navigation.mobile-link class="mt-[36px]" href="{{ route('about-us') }}">
+    <x-navigation.mobile-link class="mt-[36px]" href="{{ route('about-us') }}"
+    :active="request()->segment(1) == 'about-us'">
         <x-icon.info class="h-5 w-5" />
         {{ __('ABOUT US') }}
     </x-navigation.mobile-link>
-    <x-navigation.mobile-link class="mt-[36px]" href="{{ route('contact-us') }}">
+    <x-navigation.mobile-link class="mt-[36px]" href="{{ route('contact-us') }}"
+    :active="request()->segment(1) == 'contact-us'">
         <x-icon.phone class="h-5 w-5" />
         {{ __('CONTACT US') }}
     </x-navigation.mobile-link>

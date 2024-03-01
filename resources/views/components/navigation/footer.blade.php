@@ -1,4 +1,4 @@
-<div class="bg-offblack flex flex-col items-center justify-center px-8 pb-1 text-[#555555]">
+<div class="bg-offblack flex flex-col items-center justify-center px-8 pb-1 text-offlightgrey">
     <div class="flex w-full max-w-screen-xl flex-col-reverse justify-center gap-8 py-12 sm:flex-row sm:gap-16 sm:py-20
     lg:py-24">
 
