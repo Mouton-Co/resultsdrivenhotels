@@ -5,7 +5,7 @@
         <x-block.standard-header :title="'OFFERS'"
         :background="'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),' .
         'url(' .
-        asset('images/headers/celebrations.jpeg') .
+        asset('images/headers/offers.jpeg') .
         ')'" />
 
         <div class="flex w-full items-center justify-center px-6 py-12 md:px-12">
