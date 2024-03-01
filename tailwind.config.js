@@ -22,6 +22,7 @@ export default {
             },
             colors: {
                 gold: '#c59d5f',
+                lightgold: '#e0cdaa',
                 offwhite: '#d9d9d9',
                 offblack: '#1a1a1a',
                 offgrey: '#999999',

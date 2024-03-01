@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,7 +44,5 @@ Route::get(
 
 // news
 Route::group(['prefix' => 'news'], function () {
-    Route::get('press-release-example', function () {
-        return view('pages.news.press-release-example');
-    })->name('news.press-release-example');
+    Route::get('{slug}', [NewsController::class, 'show'])->name('news.show');
 });

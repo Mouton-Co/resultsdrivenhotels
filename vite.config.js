@@ -11,6 +11,7 @@ export default defineConfig({
                 'resources/js/dropdowns.js',
                 'resources/js/cards-carousel.js',
                 'resources/js/our-services.js',
+                'resources/js/related-posts.js',
             ],
             refresh: true,
         }),
