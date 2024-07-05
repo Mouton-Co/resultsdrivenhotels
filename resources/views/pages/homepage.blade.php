@@ -44,14 +44,14 @@
                 cursor-pointer items-center justify-between gap-6 border border-offlightgrey px-5 py-4 shadow
                 transition-all duration-300" id="brewery-book-now-dropdown">
                     <span class="brewery-book-now-dropdown" id="brewery-book-now-dropdown-selected">
-                        {{ __('The Franchoek Beer Company') }}
+                        {{ __('The Franschhoek Beer Company') }}
                     </span>
                     <x-icon.arrow class="brewery-book-now-dropdown h-5 w-5" />
                     <div class="brewery-book-now-dropdown absolute left-0 z-10 hidden w-full flex-col items-start
                     justify-center gap-4 border border-offlightgrey bg-white px-4" aria-hidden="true"
                     id="brewery-book-now-dropdown-options" style="top: 97.5px;">
                         <span class="brewery-book-now-dropdown-option hover:text-gold mt-4">
-                            {{ __('The Franchoek Beer Company') }}
+                            {{ __('The Franschhoek Beer Company') }}
                         </span>
                         <span class="brewery-book-now-dropdown-option hover:text-gold mb-4">
                             {{ __('Franks Corner') }}

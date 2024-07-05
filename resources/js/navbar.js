@@ -2,7 +2,7 @@ export function navbar() {
     // desktop
     $('#accomodation-link')
         .on('mouseover', function () {
-            $('#accomodation-dropdown').css('height', '127px');
+            $('#accomodation-dropdown').css('height', '160px');
         }
         ).on('mouseout', function () {
             $('#accomodation-dropdown').css('height', '0px');
@@ -26,7 +26,7 @@ export function navbar() {
     $('#accomodation-link-mobile').on('click', function () {
         if ($('#accomodation-dropdown-mobile').attr('aria-hidden') === 'true') {
             $('#accomodation-dropdown-mobile').attr('aria-hidden', 'false');
-            $('#accomodation-dropdown-mobile').css('height', '162px');
+            $('#accomodation-dropdown-mobile').css('height', '216px');
             $(this).removeClass('text-[#f5f5f5]').addClass('text-gold');
         } else {
             $('#accomodation-dropdown-mobile').attr('aria-hidden', 'true');
@@ -59,7 +59,7 @@ export function navbar() {
 
     // mobile menu
     $('#mobile-menu-open').on('click', function () {
-        $('#mobile-menu').css('width', '325px');
+        $('#mobile-menu').css('width', '354px');
         $('#curtain').show();
     });
     $('#mobile-menu-close, #curtain').on('click', function () {
