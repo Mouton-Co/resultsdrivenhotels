@@ -4,7 +4,7 @@
 
 <x-app-layout>
     {{-- 100vh carousel with book now block --}}
-    <x-block.homepage-header />
+    <x-block.homepage-header :rotation="$rotation" :slides="$slides" />
 
     {{-- blocks --}}
     <div class="flex flex-col items-center justify-center">
@@ -40,7 +40,7 @@
                 }}
             </p>
             <div class="mt-6 flex w-full flex-col items-center justify-center gap-3 sm:flex-row md:justify-start">
-                <div class="brewery-book-now-dropdown text-offgrey md:max-w-80 relative flex h-14 w-full
+                <div class="brewery-book-now-dropdown text-offgrey md:max-w-96 relative flex h-14 w-full
                 cursor-pointer items-center justify-between gap-6 border border-offlightgrey px-5 py-4 shadow
                 transition-all duration-300" id="brewery-book-now-dropdown">
                     <span class="brewery-book-now-dropdown" id="brewery-book-now-dropdown-selected">
