@@ -82,13 +82,13 @@
     sm:h-36 sm:flex-row sm:px-0">
         {{-- Dropdown --}}
         <div class="book-now-dropdown relative flex w-full cursor-pointer items-center justify-between gap-6 border
-        border-offlightgrey px-5 py-4 text-offgrey transition-all duration-300 sm:w-[320px]" id="book-now-dropdown">
+        border-offlightgrey px-5 py-4 text-offgrey transition-all duration-300 sm:w-[360px]" id="book-now-dropdown">
             <span class="book-now-dropdown" id="book-now-dropdown-selected">{{ __('Hotel Krige') }}</span>
             <x-icon.arrow class="book-now-dropdown h-5 w-5" />
             {{-- Dropdown options --}}
-            <div class="book-now-dropdown absolute left-0 z-10 hidden h-[217px] w-full flex-col items-start
+            <div class="book-now-dropdown absolute left-0 z-10 hidden h-[257px] w-full flex-col items-start
             justify-center gap-4 border border-offlightgrey bg-offblack px-4" id="book-now-dropdown-options"
-            aria-hidden="true" style="top: -217.5px;">
+            aria-hidden="true" style="top: -257.5px;">
                 <span class="book-now-dropdown-option mt-4 hover:text-gold">
                     {{ __('Hotel Krige') }}
                 </span>
@@ -99,10 +99,13 @@
                     {{ __('The Manhattan on Coral') }}
                 </span>
                 <span class="book-now-dropdown-option hover:text-gold">
-                    {{ __('The Franchoek Beer Company') }}
+                    {{ __('The Franschhoek Beer Company') }}
+                </span>
+                <span class="book-now-dropdown-option hover:text-gold">
+                    {{ __('Franks Corner') }}
                 </span>
                 <span class="book-now-dropdown-option mb-4 hover:text-gold">
-                    {{ __('Franks Corner') }}
+                    {{ __('Franschhoek Homestead & Cottages') }}
                 </span>
             </div>
         </div>

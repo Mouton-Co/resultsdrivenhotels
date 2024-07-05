@@ -1,7 +1,7 @@
 export function dropdowns() {
     $('#book-now-dropdown').on('click', function (e) {
         if ($('#book-now-dropdown-options').attr('aria-hidden') === 'true') {
-            let top = openTop('book-now-dropdown') ? '-217.5px' : '56.5px';
+            let top = openTop('book-now-dropdown') ? '-257.5px' : '56.5px';
             $(this).removeClass('border-offlightgrey').addClass('border-gold');
             $('#book-now-dropdown-options').css('top', top);
             $('#book-now-dropdown-options').attr('aria-hidden', 'false');
@@ -19,8 +19,9 @@ export function dropdowns() {
             { name: 'Hotel Krige', url: 'https://book.nightsbridge.com/31851' },
             { name: '38 on Westcliff', url: 'https://book.nightsbridge.com/31529' },
             { name: 'The Manhattan on Coral', url: 'https://book.nightsbridge.com/33937' },
-            { name: 'The Franchoek Beer Company', url: 'https://franschhoekbeerco.co.za/store/' },
-            { name: 'Franks Corner', url: 'https://www.dineplan.com/restaurants/franks-corner-bar-and-grill' }
+            { name: 'The Franschhoek Beer Company', url: 'https://franschhoekbeerco.co.za/store/' },
+            { name: 'Franks Corner', url: 'https://www.dineplan.com/restaurants/franks-corner-bar-and-grill' },
+            { name: 'Franschhoek Homestead & Cottages', url: 'https://book.nightsbridge.com/35766?nbid=369' }
         ];
 
         $(this).removeClass('border-gold').addClass('border-offlightgrey');
@@ -28,7 +29,9 @@ export function dropdowns() {
         $('#book-now-dropdown-options').removeClass('flex').addClass('hidden');
 
         for (const option of options) {
-            if (e.target.innerHTML.trim() == option.name) {
+            console.log(e.target.innerHTML.trim().replace(/&amp;/g, '&'));
+            console.log(option.name);
+            if (e.target.innerHTML.trim().replace(/&amp;/g, '&') == option.name) {
                 $('#book-now-dropdown-selected').text(option.name);
                 $('#book-now-button').attr('href', option.url);
                 break;
@@ -52,7 +55,7 @@ export function dropdowns() {
 
     $('#brewery-book-now-dropdown-options').on('click', function (e) {
         let options = [
-            { name: 'The Franchoek Beer Company', url: 'https://franschhoekbeerco.co.za/store/' },
+            { name: 'The Franschhoek Beer Company', url: 'https://franschhoekbeerco.co.za/store/' },
             { name: 'Franks Corner', url: 'https://www.dineplan.com/restaurants/franks-corner-bar-and-grill' }
         ];
 
