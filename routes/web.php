@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,10 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// root pages
-Route::get('/', function () {
-    return view('pages.homepage');
-})->name('homepage');
+Route::get('/', [HomepageController::class, 'index'])->name('homepage');
+
 Route::get('offers', function () {
     return view('pages.offers');
 })->name('offers');
@@ -37,10 +36,7 @@ Route::get('news', function () {
 })->name('news');
 
 // experiences and occasions
-Route::get(
-    'experiences-and-occasions/{experience}',
-    [GalleryController::class, 'index']
-)->name('experiences-and-occasions');
+Route::get('experiences-and-occasions/{experience}', [GalleryController::class, 'index'])->name('experiences-and-occasions');
 
 // news
 Route::group(['prefix' => 'news'], function () {
