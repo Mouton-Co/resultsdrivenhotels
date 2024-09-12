@@ -87,7 +87,7 @@ smaller-than-730:justify-end" aria-label="information-bar">
         </x-navigation.label>
         <x-navigation.label class="relative" id="experiences-link"
         :active="request()->segment(1) == 'experiences-and-occasions'">
-            {{ __('EXPERIECES AND OCCASIONS') }}
+            {{ __('EXPERIENCES AND OCCASIONS') }}
             <x-navigation.dropdown id="experiences-dropdown" style="height: 0px;">
                 <x-navigation.dropdown-link class="pt-5" href="{{ route('experiences-and-occasions', 'weddings') }}"
                 :active="request()->segment(2) == 'weddings'">
@@ -179,7 +179,7 @@ duration-500" id="mobile-menu" aria-label="mobile-menu" style="width: 0px;">
     <x-navigation.mobile-label class="mt-[36px]" id="experiences-link-mobile"
     :active="request()->segment(1) == 'experiences-and-occasions'">
         <x-icon.wineglasses class="h-5 w-5" />
-        {{ __('EXPERIECES AND OCCASIONS') }}
+        {{ __('EXPERIENCES AND OCCASIONS') }}
     </x-navigation.mobile-label>
     <div class="w-full shrink-0 overflow-hidden pl-[55px] transition-all duration-500"
         id="experiences-dropdown-mobile" aria-hidden="true" style="height: 0px">
