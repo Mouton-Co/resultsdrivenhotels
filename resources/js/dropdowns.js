@@ -1,7 +1,7 @@
 export function dropdowns() {
     $('#book-now-dropdown').on('click', function (e) {
         if ($('#book-now-dropdown-options').attr('aria-hidden') === 'true') {
-            let top = openTop('book-now-dropdown') ? '-257.5px' : '56.5px';
+            let top = openTop('book-now-dropdown') ? '-134.5px' : '56.5px';
             $(this).removeClass('border-offlightgrey').addClass('border-gold');
             $('#book-now-dropdown-options').css('top', top);
             $('#book-now-dropdown-options').attr('aria-hidden', 'false');
