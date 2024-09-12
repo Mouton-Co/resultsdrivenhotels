@@ -74,6 +74,6 @@
         </div>
     </div>
     <span class="text-center text-[10px]">
-        {{ __('© ALL RIGHTS RESERVED RESULTS DRIVEN HOSPITAL SERVICES 2024 | MADE BY MOUTON CO') }}
+        {{ __('© ALL RIGHTS RESERVED RESULTS DRIVEN HOSPITALITY SERVICES 2024 | MADE BY MOUTON CO') }}
     </span>
 </div>
