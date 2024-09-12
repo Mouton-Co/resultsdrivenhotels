@@ -42,26 +42,17 @@
             <span class="book-now-dropdown" id="book-now-dropdown-selected">{{ __('Hotel Krige') }}</span>
             <x-icon.arrow class="book-now-dropdown h-5 w-5" />
             {{-- Dropdown options --}}
-            <div class="book-now-dropdown absolute left-0 z-10 hidden h-[257px] w-full flex-col items-start
+            <div class="book-now-dropdown absolute left-0 z-10 hidden h-[134px] w-full flex-col items-start
             justify-center gap-4 border border-offlightgrey bg-offblack px-4" id="book-now-dropdown-options"
-            aria-hidden="true" style="top: -257.5px;">
+            aria-hidden="true" style="top: -134.5px;">
                 <span class="book-now-dropdown-option mt-4 hover:text-gold">
                     {{ __('Hotel Krige') }}
                 </span>
                 <span class="book-now-dropdown-option hover:text-gold">
                     {{ __('38 on Westcliff') }}
                 </span>
-                <span class="book-now-dropdown-option hover:text-gold">
+                <span class="book-now-dropdown-option hover:text-gold mb-4">
                     {{ __('The Manhattan on Coral') }}
-                </span>
-                <span class="book-now-dropdown-option hover:text-gold">
-                    {{ __('The Franschhoek Beer Company') }}
-                </span>
-                <span class="book-now-dropdown-option hover:text-gold">
-                    {{ __('Franks Corner') }}
-                </span>
-                <span class="book-now-dropdown-option mb-4 hover:text-gold">
-                    {{ __('Franschhoek Homestead & Cottages') }}
                 </span>
             </div>
         </div>

@@ -64,24 +64,9 @@ smaller-than-730:justify-end" aria-label="information-bar">
                 <x-navigation.dropdown-link href="https://www.38onwestcliff.co.za/" target="_blank">
                     {{ __('38 on Westcliff') }}
                 </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link href="https://www.themanhattanoncoral.co.za/"
+                <x-navigation.dropdown-link class="pb-5" href="https://www.themanhattanoncoral.co.za/"
                     target="_blank">
                     {{ __('The Manhattan on Coral') }}
-                </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link class="pb-5" href="https://fhkhomestead.co.za/"
-                    target="_blank">
-                    {{ __('Franschhoek Homestead & Cottages') }}
-                </x-navigation.dropdown-link>
-            </x-navigation.dropdown>
-        </x-navigation.label>
-        <x-navigation.label class="relative" id="brewery-link">
-            {{ __('RESTAURANTS AND BREWERY') }}
-            <x-navigation.dropdown id="brewery-dropdown" style="height: 0px;">
-                <x-navigation.dropdown-link class="pt-5" href="https://franschhoekbeerco.co.za/" target="_blank">
-                    {{ __('The Franschhoek Beer Company') }}
-                </x-navigation.dropdown-link>
-                <x-navigation.dropdown-link class="pb-5" href="https://franks-corner.com/" target="_blank">
-                    {{ __('Franks Corner') }}
                 </x-navigation.dropdown-link>
             </x-navigation.dropdown>
         </x-navigation.label>
@@ -158,22 +143,6 @@ duration-500" id="mobile-menu" aria-label="mobile-menu" style="width: 0px;">
         </x-navigation.mobile-link>
         <x-navigation.mobile-link class="mt-[34px]" href="https://www.themanhattanoncoral.co.za/" target="_blank">
             {{ __('The Manhattan on Coral') }}
-        </x-navigation.mobile-link>
-        <x-navigation.mobile-link class="mt-[34px]" href="https://fhkhomestead.co.za/" target="_blank">
-            {{ __('Franschhoek Homestead & Cottages') }}
-        </x-navigation.mobile-link>
-    </div>
-    <x-navigation.mobile-label class="mt-[36px]" id="brewery-link-mobile">
-        <x-icon.wineglass class="h-5 w-5" />
-        {{ __('RESTAURANTS AND BREWERY') }}
-    </x-navigation.mobile-label>
-    <div class="w-full shrink-0 overflow-hidden pl-[55px] transition-all duration-500" id="brewery-dropdown-mobile"
-        aria-hidden="true" style="height: 0px">
-        <x-navigation.mobile-link class="mt-[34px]" href="https://franschhoekbeerco.co.za/" target="_blank">
-            {{ __('The Franschhoek Beer Company') }}
-        </x-navigation.mobile-link>
-        <x-navigation.mobile-link class="mt-[34px]" href="https://franks-corner.com/" target="_blank">
-            {{ __('Franks Corner') }}
         </x-navigation.mobile-link>
     </div>
     <x-navigation.mobile-label class="mt-[36px]" id="experiences-link-mobile"
