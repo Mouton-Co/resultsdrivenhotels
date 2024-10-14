@@ -35,6 +35,7 @@ class HomepageController extends Controller
         return view('pages.homepage', [
             'slides' => $this->service->getCarousel(),
             'rotation' => $this->service->getRotation(),
+            'latestNews' => $this->service->getLatestNews(),
         ]);
     }
 }

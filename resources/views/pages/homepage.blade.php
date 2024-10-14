@@ -43,7 +43,9 @@
         </x-block.image-and-content>
 
         {{-- accomodation carousel --}}
-        <x-block.press-release-carousel />
+        @if ($latestNews->getTotal() > 0)
+            <x-block.press-release-carousel :newsArticles="$latestNews" />
+        @endif
 
         {{-- view offers block --}}
         <x-block.signature-block

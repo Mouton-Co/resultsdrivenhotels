@@ -2,6 +2,9 @@
 
 namespace App\Http\Services;
 
+use Contentful\Delivery\Client;
+use Contentful\Delivery\Query;
+
 class HomepageService
 {
     /**
@@ -19,6 +22,11 @@ class HomepageService
     protected array $response;
 
     /**
+     * @var Client
+     */
+    public Client $client;
+
+    /**
      * Create a new Contentful service instance.
      *
      * @return void
@@ -26,6 +34,7 @@ class HomepageService
     public function __construct()
     {
         $this->service = new ContentfulService();
+        $this->client = new Client(env('CONTENTFUL_ACCESS_TOKEN'), env('CONTENTFUL_SPACE_ID'), env('CONTENTFUL_ENVIRONMENT'));
         $this->response = $this->service->getEntries([
             'content_type' => 'homepageCarousel',
             'limit' => 1,
@@ -64,10 +73,20 @@ class HomepageService
      */
     public function getRotation(): string
     {
-        if (! empty($this->response['items'][0]['fields']['rotation'])) {
+        if (!empty($this->response['items'][0]['fields']['rotation'])) {
             return $this->response['items'][0]['fields']['rotation'];
         }
-        
+
         return '0';
+    }
+
+    /**
+     * Get the latest news articles.
+     *
+     * @return \Contentful\Core\Resource\ResourceArray
+     */
+    public function getLatestNews(): \Contentful\Core\Resource\ResourceArray
+    {
+        return $this->client->getEntries((new Query())->setContentType('newsArticle')->setLimit(6));
     }
 }

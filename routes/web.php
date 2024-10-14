@@ -31,9 +31,6 @@ Route::get('gallery', [GalleryController::class, 'all'])->name('gallery');
 Route::get('experiences-and-occasions', function () {
     return view('pages.experiences-and-occasions');
 })->name('experiences-and-occasions');
-Route::get('news', function () {
-    return view('pages.news');
-})->name('news');
 
 // experiences and occasions
 Route::get('experiences-and-occasions/{experience}', [GalleryController::class, 'index'])->name('experiences-and-occasions');
@@ -41,4 +38,5 @@ Route::get('experiences-and-occasions/{experience}', [GalleryController::class, 
 // news
 Route::group(['prefix' => 'news'], function () {
     Route::get('{slug}', [NewsController::class, 'show'])->name('news.show');
+    Route::get('/', [NewsController::class, 'index'])->name('news.index');
 });

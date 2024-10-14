@@ -1,3 +1,15 @@
 .richtext {
     @apply w-full flex flex-col gap-6 text-sm sm:text-base text-offgrey;
+
+    a {
+        @apply text-gold hover:underline;
+    }
+    
+    ul {
+        @apply list-disc pl-6;
+    }
+
+    ol {
+        @apply list-decimal pl-6;
+    }
 }
