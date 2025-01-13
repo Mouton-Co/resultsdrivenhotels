@@ -3,6 +3,7 @@
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomepageController::class, 'index'])->name('homepage');
 
+// pages
 Route::get('offers', function () {
     return view('pages.offers');
 })->name('offers');
@@ -31,6 +33,7 @@ Route::get('gallery', [GalleryController::class, 'all'])->name('gallery');
 Route::get('experiences-and-occasions', function () {
     return view('pages.experiences-and-occasions');
 })->name('experiences-and-occasions');
+Route::get('privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy-policy');
 
 // experiences and occasions
 Route::get('experiences-and-occasions/{experience}', [GalleryController::class, 'index'])->name('experiences-and-occasions');
