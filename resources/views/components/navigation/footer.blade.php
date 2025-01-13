@@ -4,9 +4,14 @@
 
         {{-- contact us --}}
         <div class="flex w-full flex-col items-center justify-center gap-3">
-            <h1 class="text-offwhite text-xl">
-                {{ __('CONTACT US') }}
-            </h1>
+            <div class="flex flex-col justify-center items-center">
+                <a class="text-offwhite text-xl hover:text-gold cursor-pointer" href="{{ route('privacy-policy') }}">
+                    {{ __('PRIVACY POLICY') }}
+                </a>
+                <a class="text-offwhite text-xl hover:text-gold cursor-pointer" href="{{ route('contact-us') }}">
+                    {{ __('CONTACT US') }}
+                </a>
+            </div>
             <div class="flex max-w-fit flex-col">
                 <a class="hover:text-gold flex items-center gap-2" href="mailto:info@resultsdrivenhotels.com">
                     <x-icon.email class="h-5 w-5" />
