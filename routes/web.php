@@ -32,7 +32,7 @@ Route::get('contact-us', function () {
 Route::get('gallery', [GalleryController::class, 'all'])->name('gallery');
 Route::get('experiences-and-occasions', function () {
     return view('pages.experiences-and-occasions');
-})->name('experiences-and-occasions');
+})->name('experiences-and-occasions.all');
 Route::get('privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy-policy');
 
 // experiences and occasions
