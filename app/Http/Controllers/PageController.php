@@ -16,7 +16,7 @@ class PageController extends Controller
      */
     public function __construct()
     {
-        $this->client = new Client(env('CONTENTFUL_ACCESS_TOKEN'), env('CONTENTFUL_SPACE_ID'), env('CONTENTFUL_ENVIRONMENT'));
+        $this->client = new Client(config('contentful.contentful.access_token'), config('contentful.contentful.space_id'), config('contentful.contentful.environment'));
     }
 
     /**
